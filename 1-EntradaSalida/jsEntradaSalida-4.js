@@ -5,8 +5,11 @@
 function mostrar()
 {
 	var dato;
-	dato = prompt ("Ingrese dato");
-	console.log (document.getElementById("elNombre").value);
+	
+	dato = prompt ("Ingrese ");
+	document.getElementById("elNombre").value = dato;
 
+
+	
 }
 
