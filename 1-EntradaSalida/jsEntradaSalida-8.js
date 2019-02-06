@@ -11,12 +11,8 @@ function SacarResto()
     num_1 = document.getElementById("numeroDividendo").value;
     num_2 = document.getElementById("numeroDivisor").value; 
 
-    num_1 = parseInt(num_1);
-    num_2 = parseInt(num_2);
-
-    resultado = num_1 % num_2;
+    resultado = parseInt(num_1) % parseInt(num_2);
 
     alert(resultado);
-
-
+    
 }

@@ -14,10 +14,7 @@ function mostrarAumento()
 
    aux = (sueldo*10)/100;
    resultado = aux + sueldo;
-   
 
    document.getElementById("resultado").value = resultado;
    
-
-	
 }

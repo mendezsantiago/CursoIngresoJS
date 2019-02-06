@@ -10,13 +10,9 @@ function sumar()
     num_1 = document.getElementById("numeroUno").value;
     num_2 = document.getElementById("numeroDos").value; 
 
-    num_1 = parseInt(num_1);
-    num_2 = parseInt(num_2);
+    suma = parseInt(num_1) + parseInt(num_2);
 
-    suma = num_1 + num_2;
-
-    alert(suma);
-
+    alert("La Suma es " + suma);
 	
 }
 
@@ -28,13 +24,9 @@ function restar()
     num_1 = document.getElementById("numeroUno").value;
     num_2 = document.getElementById("numeroDos").value; 
 
-    num_1 = parseInt(num_1);
-    num_2 = parseInt(num_2);
+    resta = parseInt(num_1) - parseInt(num_2);
 
-    resta = num_1 - num_2;
-
-    alert(resta);
-
+    alert("La Resta es " + resta);
 	
 }
 
@@ -46,13 +38,9 @@ function multiplicar()
     num_1 = document.getElementById("numeroUno").value;
     num_2 = document.getElementById("numeroDos").value; 
 
-    num_1 = parseInt(num_1);
-    num_2 = parseInt(num_2);
+    multi = parseInt(num_1) * parseInt(num_2);
 
-    multi = num_1 * num_2;
-
-    alert(multi);
-
+    alert("El producto es " + multi);
 	
 }
 
@@ -64,12 +52,9 @@ function dividir()
     num_1 = document.getElementById("numeroUno").value;
     num_2 = document.getElementById("numeroDos").value; 
 
-    num_1 = parseInt(num_1);
-    num_2 = parseInt(num_2);
+    div = parseInt(num_1) / parseInt(num_2);
 
-    div = num_1 / num_2;
-
-    alert(div);
+    alert("La división es " + div);
 
 }
 
