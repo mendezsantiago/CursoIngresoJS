@@ -7,10 +7,13 @@ function mostrar()
 	if (nota == 9 || nota == 10){
 		alert ("Excelente");
 	}
-	else if (nota >= 4){
-		alert ("Aprobó");
-	}else{
+	else{	
+		if (nota >= 4){
+			alert ("Aprobó");
+	    }
+		else{
 		alert ("Vamos, la proxima se puede");
+		}
 	}
 
 }//FIN DE LA FUNCIÓN

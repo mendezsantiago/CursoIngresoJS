@@ -4,8 +4,6 @@ function mostrar()
     
     numRandom = Math.round(Math.random()*10);  //Genero el número RANDOM entre 1 y 10 
 	
-    if(numRandom >=1 && numRandom <= 10){
-        alert(numRandom);
-    }   
-	
+    alert(numRandom);
+      	
 }//FIN DE LA FUNCIÓN
