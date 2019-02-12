@@ -5,7 +5,7 @@ function mostrar()
     var largo = prompt("Ingrese el largo del Reactangulo: ");
     var perimetro;
 
-    perimetro = (2*ancho) + (2*largo);                          //Operación
+    perimetro = (2*parseInt(ancho) + (2*parseInt(largo)));      //Operación
     alert (perimetro);                                          //Salida de datos
 
 }
