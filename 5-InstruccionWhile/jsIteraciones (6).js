@@ -10,6 +10,7 @@ function mostrar()
     numero = prompt ("Ingrese numero: ");
     numero = parseInt(numero);
     acumulador = acumulador + numero;
+
   }
 
 

@@ -2,10 +2,9 @@ function mostrar()
 {
   var sexo = prompt("Ingrese f ó m .");
 
-  while (sexo != "f"){
+  while (sexo != "f" && sexo != "m"){
 
-    alert("No ingresò");
-    continue;
+    sexo = prompt("Ingrese f ó m .");
 
   }
   document.getElementById("Sexo").value = sexo;
