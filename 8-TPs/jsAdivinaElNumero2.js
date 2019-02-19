@@ -16,17 +16,18 @@ numeroSecreto = Math.floor(Math.random()*(101-1))+1; //Genero el número RANDOM 
 
 function comenzar()
 {
+
 	obtenerDatos();
 	if (numeroIngresado == numeroSecreto){
-		contadorIntentos +=1;
-		document.getElementById("intentos").value = contadorIntentos;
-		alert("Usted es un Psíquico”");
+		  contadorIntentos +=1;
+		  document.getElementById("intentos").value = contadorIntentos;
+		  alert("Usted es un Psíquico”");
 	}
 	else
 	{	
-		contadorIntentos +=1;
-		document.getElementById("intentos").value = contadorIntentos;
-		alert("Perdiste, vuelve a intentar");
+		  contadorIntentos +=1;
+		  document.getElementById("intentos").value = contadorIntentos;
+		  alert("Perdiste, vuelve a intentar");
 	
 	}
 	
@@ -35,12 +36,24 @@ function comenzar()
 
 function verificar()
 {
-	
-	obtenerDatos();
+  obtenerDatos();
 	if (numeroIngresado == numeroSecreto){
         contadorIntentos += 1;       
         alert ("Usted es un ganador!!, y en solo "+ contadorIntentos +" intentos");
         document.getElementById("intentos").value = contadorIntentos;
+        if (contadorIntentos == 2){
+          alert("excelente percepción");
+        }else if(contadorIntentos == 3){
+          alert("Esto es suerte");
+        }else if(contadorIntentos == 4){
+          alert("Excelente técnica");
+        }else if(contadorIntentos == 5){
+          alert("usted está en la media");
+        }else if(contadorIntentos > 6 && contadorIntentos <= 10){
+          alert("Falta técnica");
+        }else if(contadorIntentos > 10){
+          alert("afortunado en el amor!!");
+        }
     }
     else
     { 
@@ -58,8 +71,7 @@ function verificar()
 
       }  
     } 
-    if (contadorIntentos ==1)  
-
+    
 }
 
 function obtenerDatos() {
