@@ -11,7 +11,7 @@ function mostrar()
 
     numero = prompt ("Ingrese numero: ");
     numero = parseInt(numero);
-    if (numero > 0){
+    if (numero >= 0){
       positivo = positivo + numero;
     }else
     {
