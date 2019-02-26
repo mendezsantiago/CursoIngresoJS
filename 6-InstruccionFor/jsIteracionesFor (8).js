@@ -1,22 +1,24 @@
 function mostrar()
 {
+    
+    var num;
+    var cantidadDivisores = 0;
+   
     var i;
-    var num = prompt("Ingrese numero: ");
-    var cantidadPrimos = 0;
-    var resto;
-
-    for (i = 1; i<=num; i++){
-
-        resto = num % i;
-
-        if (resto != 0){
-            cantidadPrimos += 1;
-            document.write("<br/>Primo: "+i);
-         }
-
+    num = prompt("Ingrese numero: ");
+    for (i = 1; i <= num ; i++){
+        
+        if (num % i == 0){
+            cantidadDivisores += 1;
+            document.write("<br/>Divisores: "+i);
+        }
     }
-    document.write("<br/>Cantidad de Primos: "+cantidadPrimos);
+        document.write("<br/>Cantidad de Divisores: "+cantidadDivisores);
+        if (cantidadDivisores <= 2){
+            document.write("<br/> Es número primo");
+        }else{
+            document.write("<br/> No es número primo");
+        }
 
-
-
+    
 }//FIN DE LA FUNCIÓN
