@@ -5,8 +5,8 @@ function mostrar()
     var aux;
     var precioFinal;
 
-    aux = (precio * descuento)/100;                                     //Operación
-    precioFinal = precio - descuento;
+    aux = precio * descuento/100;                                     //Operación
+    precioFinal = precio - aux;
 
     document.getElementById("elPrecioFinal").value = precioFinal;       //Salida de datos
 
