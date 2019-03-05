@@ -19,13 +19,13 @@ function mostrar()
             alert("Nota no válida, vuelva a intentar ");
             nota = prompt("Ingrese nota del alumno: "+contador+": ");
             nota = parseInt(nota);
-            continue;
+            
         }
         sexo = prompt("Ingrese sexo del alumno "+contador+" (m/f): ");
         while (sexo != "m" && sexo != "f"){                                 //Validación
             alert("Sexo no válido, vuelva a intentar ");
             sexo = prompt("Ingrese sexo del alumno "+contador+" (m/f): ");
-            continue;
+            
         }
         if (nota >= 6 && sexo == "m"){
             cantidadMasculinos += 1;
